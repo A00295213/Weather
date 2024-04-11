@@ -1,0 +1,17 @@
+public class WeatherData
+{
+    private static WeatherData test;
+
+    private WeatherData(){ }
+
+
+    public class WeatherData GetInstance(){
+
+        if(test == null){
+            test = new WeatherData();
+        }
+        return test;
+    }
+
+    public void UpdateWeatherData(){}
+}

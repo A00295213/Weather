@@ -1,0 +1,16 @@
+public class CurrentConditionsDisplay : Display
+{
+    public void Display ()
+    {
+        Console.Writeline("current weather condition");
+
+    }
+}
+
+public class ForecastDisplay : Display
+{
+    public void Display ()
+    {
+        Console.Writeline("show forecast")
+    }
+}

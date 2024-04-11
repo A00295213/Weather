@@ -1,0 +1,14 @@
+public class DisplayFactory {
+    public IDisplay CreateDisplay (string showtype )
+    {
+        switch (showtype.ToLower() )
+        {
+            case "current":
+               return new CurrentConditionsDisplay();
+            case " forcast" : return new ForecastDisplay();
+
+            default :
+            throw new ArgumentException  ("Invalid display typr");   
+        }
+    }
+}

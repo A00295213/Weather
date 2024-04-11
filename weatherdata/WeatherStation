@@ -1,0 +1,13 @@
+public class WeatherStation {
+    private readonly DisplayFactory dispalyfactory;
+
+    public WeatherStation (DisplayFactory dispalyfactory){
+        this.dispalyfactory = dispalyfactory;
+
+    }
+
+    public void AddDisplay (string showtype ){
+        IDisplay display =   dispalyfactory.CreateDisplay(showtype);
+        display.Display();
+    }
+}
